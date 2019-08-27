@@ -1,0 +1,18 @@
+.homePage {
+  &_container {
+  }
+  &_description {
+  }
+  &_details {
+    background-color: #000000;
+    color: white;
+    // img:nth-of-child(2) {
+    //   width: 159.79px;
+    //   height: 130px;
+    // }
+    img {
+      width: 159.79px;
+      height: 130px;
+    }
+  }
+}

@@ -1,12 +1,36 @@
 # _<p align="center">Basalt Design System</p>_
 
-#### _**<p align="center">By: Julia Sheremet</p>**_
+## PLANNING
 
-## <span style="color:#74875d;">Description</span>
+- [x] Add readme with notes on planning and ideas
+- [] Update props in all the files, and organize files
+- [x] Add eslint and prettier to project
+- [x] Install node-sass
+- [] Create Stylesheets for all components that need styles
+- [x] Organize all svgs and images into assets folder
+- [] Identify and create reusable components and add all the different states to them
+- [] Build from mobile first
+- [] Look up react carousels
+- [] Add states for loading - for a better UX Experience
+- [] Note to self: I can use any react library to add to the app
+- [] Verify that the app is responsive in Chrome, Firefox, and Safari
+- [] Add util function to update px to em
+- [] Add additional tests for the add and remove added functionality
 
-_This webpage application is designed to display realtime and historical stock data_
+## RESEARCH/DISCOVER:
 
-## <span style="color:#74875d;">Setup/Installation Requirements</span> :computer:
+- Animations are pulled from the React-Fade-In Library: ***** Add link to aos
+
+## TECHNOLOGIES USED
+
+| Development Tools & Technologies |
+| :------------ |
+| Create React App |
+| Node Sass | 
+| ES5/ES6/ES7 JavaScript |
+| Prettier & Eslint |
+
+## SET UP:
 
 * Clone repository on your local computer.
 * Install application
@@ -16,11 +40,6 @@ _This webpage application is designed to display realtime and historical stock d
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## <span style="color:#74875d;">Known Bugs</span>
-
-_Feel free to email me at [juliajessicasher@gmail.com](mailto:juliajessicasher@gmail.com) if you run into any issues or have questions, ideas or concerns. Please enjoy and feel free to share your opinion, constructive criticism, or comments of my work. :+1:_
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -51,18 +70,9 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### License
 
-## <span style="color:#74875d;">Technologies Used</span>
-
-| Development Tools & Technologies |
-| :------------ |
-| Create React App |
-| CSS & JavaScript |
-| Prettier & Eslint |
-
-### <span style="color:#74875d;">License</span>
-
-Copyright (c) 2018 ****_Julia Sheremet_****
+Copyright (c) 2019 ****_Julia Sheremet_****
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

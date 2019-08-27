@@ -1,6 +1,30 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Assets/Fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('./Assets/Fonts/Karla/Karla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('./Assets/Fonts/Karla/Karla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .app {
-  background-color: #282c34;
   min-height: 100vh;
-  font-size: 18px;
-  color: white;
+  font-size: 1.2em;
+  color: #000000;
+}
+
+body {
+  font-family: Montserrat;
 }

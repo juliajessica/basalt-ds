@@ -1,0 +1,25 @@
+.navigation {
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Karla';
+    font-weight: bold;
+    img {
+      margin: 20px;
+      width: 220.41px;
+      height: 48px;
+    }
+    p {
+      text-transform: uppercase;
+      padding-right: 14px;
+    }
+    span p {
+      border-left: 5px solid black;
+      padding-left: 14px;
+    }
+  }
+  &_routes {
+    display: flex;
+    flex-direction: row;
+  }
+}
