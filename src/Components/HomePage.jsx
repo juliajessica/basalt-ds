@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import HomePageDetail from './HomePageDetail.jsx';
-import book from '../Assets/pngIcons/001-reader.png';
-import settings from '../Assets/pngIcons/002-settings.png';
-import firewall from '../Assets/pngIcons/003-firewall.png';
+import React, { useState, useEffect, Fragment } from 'react';
+import HomePageDetails from './HomePageDetails';
+import Spinner from './Spinner';
+import NavBar from './NavBar';
+import book from '../assets/svgIcons/001-reader.svg';
+import settings from '../assets/svgIcons/002-settings.svg';
+import firewall from '../assets/svgIcons/003-firewall.svg';
 
 import './homePage.scss';
 
@@ -25,28 +27,46 @@ const allDetails = [
 ];
 
 const HomePage = () => {
-  const [loading, isLoading] = useState(false);
-  return (
-    <div className="homePage_container">
-      <div className="homePage_description">
-        <p>
-          Basalt is a full-service digital agency that believes design systems empower businesses to
-          grow and meet their unique goals. We help large, enterprise organizations increase speed
-          to market, decrease their in-house technical teams’ burdens, and ensure brand consistency
-          and information accuracy through design systems and other digital solutions. Our objective
-          is to define and map an organization’s long-term vision, and then create the tools needed
-          to reach those goals.
-        </p>
-      </div>
-      <div className="homePage_details">
-        {allDetails.map(detail => {
-          return (
-            <HomePageDetail title={detail.title} details={detail.details} image={detail.image} />
-          );
-        })}
-      </div>
-    </div>
-  );
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 800);
+  }, []);
+
+  if (loading) {
+    return <Spinner />;
+  }
+  if (!loading) {
+    return (
+      <Fragment>
+        <NavBar />
+        <div className="homePage_container">
+          <div className="homePage_description">
+            <p>
+              Basalt is a full-service digital agency that believes design systems empower businesses to
+              grow and meet their unique goals. We help large, enterprise organizations increase speed
+              to market, decrease their in-house technical teams’ burdens, and ensure brand consistency
+              and information accuracy through design systems and other digital solutions. Our objective
+              is to define and map an organization’s long-term vision, and then create the tools needed
+              to reach those goals.
+            </p>
+          </div>
+          <div className="homePage_details">
+            {allDetails.map(detail => {
+              return (
+                <HomePageDetails
+                  title={detail.title}
+                  details={detail.details}
+                  image={detail.image}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </Fragment>
+    );
+  }
+  return <Spinner />;
 };
 
 export default HomePage;

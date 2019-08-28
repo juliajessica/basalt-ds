@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../Assets/pngIcons/BASALT_master_main.png';
+import logo from '../assets/pngIcons/BASALT_master_main.png';
 
 import './navBar.scss';
 
@@ -9,12 +9,8 @@ const NavBar = () => {
       <img src={logo} alt="Basalt Logo" />
       <div className="navigation_routes">
         <p>home</p>
-        <span>
-          <p>phone</p>
-        </span>
-        <span>
-          <p>et</p>
-        </span>
+        <p>phone</p>
+        <p>et</p>
       </div>
     </div>
   );
