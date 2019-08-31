@@ -3,9 +3,9 @@ import { string } from 'prop-types';
 
 import './homePageDetails.scss';
 
-const HomePageDetails = ({ image, title, details }) => {
+const HomePageDetails = ({ image, title, details, ...rest }) => {
   return (
-    <div className="homePageDetails_container">
+    <div className="homePageDetails_container" {...rest}>
       <img src={image} alt={title} />
       <p>{title}</p>
       <p>{details}</p>

@@ -3,30 +3,46 @@
 ## PLANNING
 
 - [x] Add readme with notes on planning and ideas
-- [] Update props in all the files, and organize files
+- [x] Update props in all the files, and organize files
 - [x] Add eslint and prettier to project
 - [x] Install node-sass
-- [] Create Stylesheets for all components that need styles
+- [x] Create Stylesheets for all components that need styles
 - [x] Organize all svgs and images into assets folder
 - [] Identify and create reusable components and add all the different states to them
 - [] Build from mobile first
-- [] Look up react carousels
-- [] Add states for loading - for a better UX Experience
+- [x] Look up react carousels
+- [x] Add states for loading - for a better UX Experience
 - [] Note to self: I can use any react library to add to the app
 - [] Verify that the app is responsive in Chrome, Firefox, and Safari
 - [] Add util function to update px to em
-- [] Add additional tests for the add and remove added functionality
 
 ## RESEARCH/DISCOVER:
 
-- Animations are pulled from the React-Fade-In Library: ***** Add link to aos
+- Animations are pulled from the AOS - Animate on scroll library: https://www.npmjs.com/package/aos
+- The spinner for the loading page UX is from React Bootstrap - https://react-bootstrap.github.io/
+
+## THOUGHT PROCESS/ADJUSTMENTS:
+
+- Navbar - I added a hover effect on the navigation items and wrapped them in a <Link> tag from the React-Router-Dom library so essentially they would be updated and contain a link to route the user to a different page.
+- Carousel - I noticed that the background image from the designs of the carousel was a little grainy and harsh on the eyes. It made me think that there may possibly be accessablility issues since the H1 font was also designed to be #fffff (white). I decided to opt out of the banner image all together and created a similar UI for 3 differnet slides on the carousel. 
+- 
+
+## COLOR PALETTE
+- White #FFFFFF
+- Black #000000
+- Subtle Black #191919
+- Grey #7E8896
+- Lime Green #D4CB02
+
+resource: https://coolors.co/
 
 ## TECHNOLOGIES USED
 
 | Development Tools & Technologies |
 | :------------ |
 | Create React App |
-| Node Sass | 
+| Node Sass |
+| AOS, React Bootstrap, React-Router-Dom |
 | ES5/ES6/ES7 JavaScript |
 | Prettier & Eslint |
 

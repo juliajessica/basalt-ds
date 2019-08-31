@@ -2,6 +2,8 @@ import React, { useState, useEffect, Fragment } from 'react';
 import HomePageDetails from './HomePageDetails';
 import Spinner from './Spinner';
 import NavBar from './NavBar';
+import CarouselBanner from './CarouselBanner';
+import Footer from './Footer';
 import book from '../assets/svgIcons/001-reader.svg';
 import settings from '../assets/svgIcons/002-settings.svg';
 import firewall from '../assets/svgIcons/003-firewall.svg';
@@ -41,16 +43,15 @@ const HomePage = () => {
       <Fragment>
         <NavBar />
         <div className="homePage_container">
-          <div className="homePage_description">
-            <p>
-              Basalt is a full-service digital agency that believes design systems empower businesses to
-              grow and meet their unique goals. We help large, enterprise organizations increase speed
-              to market, decrease their in-house technical teams’ burdens, and ensure brand consistency
-              and information accuracy through design systems and other digital solutions. Our objective
-              is to define and map an organization’s long-term vision, and then create the tools needed
-              to reach those goals.
-            </p>
-          </div>
+          <CarouselBanner />
+          <p className="homePage_copy">
+            Basalt is a full-service digital agency that believes design systems empower businesses to
+            grow and meet their unique goals. We help large, enterprise organizations increase speed
+            to market, decrease their in-house technical teams’ burdens, and ensure brand consistency
+            and information accuracy through design systems and other digital solutions. Our objective
+            is to define and map an organization’s long-term vision, and then create the tools needed
+            to reach those goals.
+          </p>
           <div className="homePage_details">
             {allDetails.map(detail => {
               return (
@@ -58,11 +59,13 @@ const HomePage = () => {
                   title={detail.title}
                   details={detail.details}
                   image={detail.image}
+                  data-aos="fade-up"
                 />
               );
             })}
           </div>
         </div>
+        <Footer />
       </Fragment>
     );
   }

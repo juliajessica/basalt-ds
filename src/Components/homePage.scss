@@ -1,18 +1,21 @@
 .homePage {
   &_container {
   }
-  &_description {
-  }
   &_details {
     background-color: #000000;
     color: white;
-    // img:nth-of-child(2) {
-    //   width: 159.79px;
-    //   height: 130px;
-    // }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    // grid-auto-flow: dense;
+    // justify-content: space-around;
+    padding: 20px;
     img {
       width: 159.79px;
       height: 130px;
     }
+  }
+  &_copy {
+    padding: 80px;
+    text-align: center;
   }
 }

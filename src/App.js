@@ -1,13 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import HomePage from './components/HomePage';
 
 import './app.scss';
 
 function App() {
   return (
-    <div className="app">
-      <HomePage />
-    </div>
+    <Router>
+      <div className="app">
+        <Route exact path="/" component={HomePage} />
+      </div>
+    </Router>
   );
 }
 
