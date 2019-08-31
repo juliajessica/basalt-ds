@@ -1,9 +1,5 @@
 import React from 'react';
 
-import './footer.scss';
-
-const Footer = () => {
-  return <div>im a footer</div>;
-};
+const Footer = () => <div className="footer_container">©2019 Basalt All Rights Reserved </div>;
 
 export default Footer;
