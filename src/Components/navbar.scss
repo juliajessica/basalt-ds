@@ -10,20 +10,24 @@
       width: 220.41px;
       height: 48px;
     }
-    p {
-      text-transform: uppercase;
-      padding: 0 14px;
-    }
-    p:hover {
-      cursor:pointer;
-      color:#7e7e7e;
-    }
-    p:nth-of-type(1), p:nth-of-type(2) {
-      border-right: 2px solid black;
-    }
+    
   }
   &_routes {
     display: flex;
     flex-direction: row;
+    p {
+      margin-bottom: 0;
+      align-self: center;
+      text-transform: uppercase;
+      padding: 0 14px;
+      &:hover {
+        cursor:pointer;
+        color:#7E8896;
+      } 
+    }
+    a:nth-child(1), a:nth-child(2) {
+      border-right: 2px solid #000000;
+    }
   }
 }
+
